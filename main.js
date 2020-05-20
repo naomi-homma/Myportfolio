@@ -1,3 +1,4 @@
+
 $(function(){
   load_effect();
   // $(window).scroll(function (){
@@ -16,6 +17,15 @@ function load_effect(){
       }
   });
 }
+
+//スクロール時ふわっと表示
+ScrollReveal().reveal('.fadeIn', {
+  delay: 500,
+  duration: 1500, 
+  origin: 'bottom', 
+  distance: '150px',
+  reset: false 
+});
 
 {
   // modalを出す
@@ -77,6 +87,7 @@ function load_effect(){
   }
 }
 
+// スムーズスクロール&ハンバーガーメニュー処理
 $(function() {
   //スムーズスクロール
   let runScroll = function() {
