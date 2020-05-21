@@ -1,12 +1,9 @@
 
+//ロード時ふわっと表示
 $(function(){
   load_effect();
-  // $(window).scroll(function (){
-  //     scroll_effect();
-  // });
 });
 
-//ふわっとロード
 function load_effect(){
   var tt = $(window).scrollTop();
   var hh = $(window).height();
@@ -28,7 +25,7 @@ ScrollReveal().reveal('.fadeIn', {
 });
 
 {
-  // modalを出す
+  //modal
   const modalOpen = document.querySelectorAll('.works_modal_open');
   const modal = document.querySelectorAll('.works_modal_wrapper');
   const modalCover = document.querySelectorAll('.works_modal_mask');
