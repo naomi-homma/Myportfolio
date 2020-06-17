@@ -1,2 +1,0 @@
-# Myportfolio
-ポートフォリオver1
