@@ -57,7 +57,7 @@ html, body {
 /* -----ttl module css----- */
 .ttl {
     font-size: 2rem;
-    color: gray;
+    color: #808080;
     position: relative;
     margin-bottom: 100px;
 }
@@ -75,7 +75,7 @@ html, body {
 .scroll-up{
     opacity: 0; 
     transform: translateY(100px)/*スクロールアップする距離*/; 
-    transition: all 2s/*処理にかかる時間*/;
+    transition: all 1s/*処理にかかる時間*/;
 }
 .scroll-up.done{
     opacity : 1; 
@@ -84,7 +84,7 @@ html, body {
 .load-up{
     opacity: 0; 
     transform: translateY(100px)/*スクロールアップする距離*/; 
-    transition: all 2s/*処理にかかる時間*/;
+    transition: all 1s/*処理にかかる時間*/;
 }
 .load-up.done{
     opacity : 1; 
@@ -113,7 +113,7 @@ html, body {
     display: block;
     text-decoration: none;
     font-size: 1.5rem;
-    color: gray;
+    color: #808080;
 }
 .header_contents input,
 .header_contents label {
@@ -129,7 +129,7 @@ html, body {
     text-decoration: none;
     padding-left: 20px;
     padding-right: 20px;
-    color: gray;
+    color: #808080;
 }
 .header_navi_item span:after {
     content: "";
@@ -138,7 +138,7 @@ html, body {
     left: 50%;
     width: 0;
     height: 1px;
-    background: gray;
+    background: #808080;
     opacity: 1;
     transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
@@ -149,7 +149,7 @@ html, body {
     width: 100%;
 }
 .header_navi_item a:hover {
-    color: gray;
+    color: #808080;
 }
 
 /* -----main css----- */
@@ -242,14 +242,14 @@ html, body {
     padding: 60px;
     border-radius: 4px;
     box-shadow: 0 0 15px rgba(0,0,0,.2);
-    color: gray;
+    color: #808080;
     text-align: left;
     z-index: 5;
 }
 .about_contents_detail h1{
     font-size: 1.7rem;
     font-weight: bold;
-    color: gray;
+    color: #808080;
     margin-bottom: 15px;
 }
 .about_contents_detail h2 {
@@ -270,63 +270,6 @@ html, body {
     width: 350px;
     border-radius: 4px;
 }
-
-
-/* ------services css------ */
-.services {
-    position: relative;
-    background-image: url(../../assets/images/services_Visu.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 90px 0;
-    margin-bottom: 100px;
-}
-.services:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-.services_container {
-    position: relative;
-    text-align: center;
-    width: 80%;
-    max-width: 1080px;
-    margin: 0 auto;
-    backdrop-filter: blur(5px);
-    padding: 30px 0 50px 0;
-}
-.services-ttl {
-    color: #fff;
-}
-.services_contents {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.services_card {
-    background-color: #fff;
-    color: gray;
-    padding: 30px;
-    text-align: center;
-    width: calc((100% - 20%) / 2);
-}
-.fa-file-code, .fa-desktop {
-    font-size: 4rem;
-    margin-bottom: 30px;
-}
-.services_card_ttl {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-.services_card_text {
-    line-height: 1.4;
-    font-size: 0.9rem;
-}
-
 /* ------skills css------ */
 .skills {
     position: relative;
@@ -349,7 +292,6 @@ html, body {
     position: relative;
     text-align: center;
     width: 80%;
-    /* max-width: 1200px; */
     margin: 0 auto;
     backdrop-filter: blur(5px);
     padding: 30px 0 50px 0;
@@ -363,7 +305,7 @@ html, body {
     justify-content: space-around;
 }
 .skills_card {
-    color: gray;
+    color: #808080;
     background-color: #efefef;
     text-align: center;
     padding: 30px 20px;
@@ -377,7 +319,6 @@ html, body {
 .skills_card_ttl {
     font-size: 1.3rem;
 }
-
 /* ------works css------ */
 .works {
     margin-bottom: 180px;
@@ -480,7 +421,7 @@ html, body {
     position: absolute;
     top: 0;
     right: 10px;
-    color: gray;
+    color: #808080;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -544,7 +485,7 @@ html.is_open, body.is_open {
   }
 /* ------contact css------ */
 .contact {
-    padding-bottom: 120px;
+    padding-bottom: 90px;
     background-color: #F0F0F0;
 }
 .contact_container {
@@ -591,10 +532,10 @@ html.is_open, body.is_open {
 }
 .contact_btn_area {
     width: 200px;
+    margin: 50px auto;
 }
 .contact_btn {
     display: block;
-    margin: 50px auto ;
     cursor: pointer;
     background: #fff;
     color: #555;
@@ -607,6 +548,34 @@ html.is_open, body.is_open {
 .contact_btn:hover {
     color: #fff;
     background: #555;
+}
+
+/* ------footer css------ */
+footer {
+    background-color: #F0F0F0;
+    padding-bottom: 40px;
+}
+.footer_container {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.footer_container > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer_container > ul > li {
+    margin-right: 20px;
+}
+.footer_icon .my_size {
+    font-size: 2.2rem;
+    color: #333;
+}
+.footer_icon_blog {
+    margin-top: 5px; /*他アイコンとの位置合わせ*/
+    width: 50px;
 }
 
 /* レスポンシブ タブレット*/
@@ -643,7 +612,7 @@ html.is_open, body.is_open {
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: gray;
+        background-color: #808080;
         display: block;
         transition: all .2s ease-in-out;      
     }
@@ -720,7 +689,7 @@ html.is_open, body.is_open {
     }
     .header_navi_item a {
         padding: 20px;
-        color: gray;
+        color: #808080;
         display: block;
     }
     .header_navi_item span {
@@ -733,7 +702,7 @@ html.is_open, body.is_open {
         left: 50%;
         width: 0;
         height: 1px;
-        background: gray;
+        background: #808080;
         opacity: 1;
     }
     .header_navi_item:hover span:after {
