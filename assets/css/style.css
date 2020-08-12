@@ -261,6 +261,21 @@ html, body {
     line-height: 1.5;
     margin-bottom: 15px;
 }
+.about_contents_inner_blog {
+    color:#808080;
+    font-weight: bold;
+    transition: text-decoration 1s;
+}
+.about_contents_inner_blog:hover{
+    color:#808080;
+    text-decoration: underline;
+}
+.about_contents_icons {
+    margin: 0 auto;
+}
+.about_contents_icon {
+    margin: 0 auto;
+}
 .about_contents_image {
     position: absolute;
     left: 60%;
@@ -485,7 +500,7 @@ html.is_open, body.is_open {
   }
 /* ------contact css------ */
 .contact {
-    padding-bottom: 90px;
+    padding-bottom: 60px;
     background-color: #F0F0F0;
 }
 .contact_container {
