@@ -353,25 +353,33 @@ html, body {
 .works_item {
     width: calc((100% - 10%) / 3);
     overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
 }
 .works_item:nth-child(3n) {
     margin-right: 0px;
 }
-.works_item_image {
+.works_image {
     margin-bottom: 16px;
     position: relative;
 }
-.works_item_image img {
+.works_image img {
     width: 100%;
 }
-.works_item_text {
+.works_caption {
     text-align: center;
     font-size: 1.2rem;
+    color: #808080;
+    padding: 10px 
 }
-.mask_text {
-    font-size: 0.9rem;
-    text-align: center;
-    color: #fff;
+.works_caption_title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.works_caption_info {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 8px;
 }
 .works_image_mask {
     position: absolute;
@@ -385,10 +393,17 @@ html, body {
     transition: all 0.6s ease;
     cursor: pointer;
 }
-.works_item_image:hover .works_image_mask {
-    opacity: 1;
-    padding-top: 30%;
+.mask_text {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
 }
+.works_image:hover .works_image_mask {
+    opacity: 1;
+    padding-top: 42%;
+}
+
 /* ------works_modal css------ */
 .works_modal_wrapper {
     position: fixed;
