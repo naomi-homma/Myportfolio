@@ -239,7 +239,7 @@ html, body {
     top: 150px;
     left: 5%;
     width: 75%;
-    padding: 60px;
+    padding: 60px 60px 30px 60px;
     border-radius: 4px;
     box-shadow: 0 0 15px rgba(0,0,0,.2);
     color: #808080;
@@ -284,6 +284,24 @@ html, body {
 .about_contents_image img{
     width: 350px;
     border-radius: 4px;
+}
+/* ------sns css------ */
+.sns_contents > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sns_contents > ul > li {
+    margin-right: 20px;
+}
+.sns_icon .my_size {
+    font-size: 2.2rem;
+    color: #333;
+}
+.sns_icon_blog {
+    margin-top: 5px; /*他アイコンとの位置合わせ*/
+    width: 50px;
 }
 /* ------skills css------ */
 .skills {
@@ -585,27 +603,11 @@ footer {
     background-color: #F0F0F0;
     padding-bottom: 40px;
 }
-.footer_container {
-    width: 60%;
-    margin: 0 auto;
-    padding-top: 30px;
-}
-.footer_container > ul {
+footer > .sns_contents > ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-.footer_container > ul > li {
-    margin-right: 20px;
-}
-.footer_icon .my_size {
-    font-size: 2.2rem;
-    color: #333;
-}
-.footer_icon_blog {
-    margin-top: 5px; /*他アイコンとの位置合わせ*/
-    width: 50px;
 }
 
 /* レスポンシブ タブレット*/
