@@ -278,11 +278,14 @@ html, body {
 }
 .about_contents_image {
     position: absolute;
-    left: 60%;
+    left: 58%;
     z-index: 10;
 }
 .about_contents_image img{
     width: 350px;
+    height: 340px;
+    object-fit: cover;
+    object-position: 0 15%;
     border-radius: 4px;
 }
 /* ------sns css------ */
