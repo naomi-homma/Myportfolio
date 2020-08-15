@@ -354,7 +354,7 @@ html, body {
 }
 /* ------works css------ */
 .works {
-    margin-bottom: 180px;
+    margin-bottom: 80px;
     text-align: center;
 }
 .works_container {
@@ -373,31 +373,20 @@ html, body {
     overflow: hidden;
     border-radius: 2px;
     box-shadow: 0 0 15px rgba(0,0,0,.2);
+    margin-bottom: 50px;
 }
 .works_item:nth-child(3n) {
     margin-right: 0px;
 }
 .works_image {
-    margin-bottom: 16px;
     position: relative;
 }
-.works_image img {
+.works_modal_open {
+    height: 350px;
+}
+.works_modal_open img {
     width: 100%;
-}
-.works_caption {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #808080;
-    padding: 10px 
-}
-.works_caption_title {
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-.works_caption_info {
-    font-size: 1rem;
-    line-height: 1.2;
-    margin-bottom: 8px;
+    height: 100%;
 }
 .works_image_mask {
     position: absolute;
@@ -417,11 +406,45 @@ html, body {
     text-align: center;
     color: #fff;
 }
+.works_modal_content img {
+    width: 100%;
+}
 .works_image:hover .works_image_mask {
     opacity: 1;
     padding-top: 42%;
 }
-
+.works_caption {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #808080;
+    padding: 15px 
+}
+.works_caption_title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.works_caption_info {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+.works_caption_url {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1rem;
+}
+.works_caption_url p:first-child {
+    margin-right: 20px;
+}
+.works_caption_url p a {
+    color: #007bff;
+}
+.works_caption_url p:hover {
+    text-decoration: underline;
+}
 /* ------works_modal css------ */
 .works_modal_wrapper {
     position: fixed;
