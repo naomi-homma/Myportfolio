@@ -59,7 +59,6 @@ html, body {
     font-size: 2rem;
     color: #808080;
     position: relative;
-    margin-bottom: 100px;
 }
 .ttl:before {
     content: "";
@@ -70,6 +69,9 @@ html, body {
     width: 20px;
     height: 0px;
     border-bottom: 2px solid;
+}
+.ttl_container {
+    margin-bottom: 100px;
 }
 /* ------fadeIn css------ */
 .scroll-up{
@@ -227,9 +229,6 @@ html, body {
     padding-bottom: 120px;
     text-align: center;
     max-width: 1080px;
-}
-.about_ttl {
-    margin-bottom: 80px;
 }
 .about_contents {
     display: flex;
