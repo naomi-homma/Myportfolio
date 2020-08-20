@@ -59,7 +59,6 @@ html, body {
     font-size: 2rem;
     color: #808080;
     position: relative;
-    margin-bottom: 100px;
 }
 .ttl:before {
     content: "";
@@ -70,6 +69,9 @@ html, body {
     width: 20px;
     height: 0px;
     border-bottom: 2px solid;
+}
+.ttl_container {
+    margin-bottom: 100px;
 }
 /* ------fadeIn css------ */
 .scroll-up{
@@ -228,9 +230,6 @@ html, body {
     text-align: center;
     max-width: 1080px;
 }
-.about_ttl {
-    margin-bottom: 80px;
-}
 .about_contents {
     display: flex;
 }
@@ -295,8 +294,8 @@ html, body {
     justify-content: flex-start;
     align-items: center;
 }
-.sns_contents > ul > li {
-    margin-right: 20px;
+.sns_contents > ul > li:not(:first-child) {
+    margin-left: 20px;
 }
 .sns_icon .my_size {
     font-size: 2.2rem;
@@ -313,7 +312,7 @@ html, body {
     background-attachment: fixed;
     background-size: cover;
     padding: 90px 0;
-    margin-bottom: 180px;
+    margin-bottom: 80px;
 }
 .skills:before {
     content: "";
@@ -340,13 +339,17 @@ html, body {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.card_container {
+    width:calc((100% - 20%) / 3);
+}
+.card_container:nth-child(n+4) {
+    margin-top: 30px;
+}
 .skills_card {
     color: #808080;
     background-color: #efefef;
     text-align: center;
     padding: 30px 20px;
-    width:calc((100% - 20%) / 3);
-    margin-bottom: 30px;
 }
 .skills_card .my_size {
     font-size: 3rem;
@@ -376,11 +379,13 @@ html, body {
     overflow: hidden;
     border-radius: 2px;
     box-shadow: 0 0 15px rgba(0,0,0,.2);
-    margin-bottom: 50px;
     margin-right: 30px;
 }
 .works_item:nth-child(3n) {
     margin-right: 0px;
+}
+.works_item:nth-child(n+4) {
+    margin-top: 50px;
 }
 .works_image {
     position: relative;
@@ -793,20 +798,16 @@ footer > .sns_contents > ul {
     .skills_container {
         width: 80%;
     }
-    .skills_card {
-        width: 40%;
-        margin: 0 auto 20px;
-        padding: 30px 30px;
-    }
+    /* .card_container {
+        width:calc((100% - 20%) / 3);
+        margin: 30px auto 0px;
+    } */
     /* ------works css------ */
 
     /* ------contact css------ */
     .contact_container {
         width: 90%;
     }
-
-
-
 }
 
 /* レスポンシブ スマホ*/
@@ -869,9 +870,15 @@ footer > .sns_contents > ul {
     .skills_container {
         width: 90%;
     }
-    .skills_card {
-        width: 40%;
-        padding: 30px 30px;
+    .skills_contents {
+        display: block;
+    }
+    .card_container {
+        width: 60%;
+        margin: 30px auto 0px;
+    }
+    .card_container:first-child {
+        margin-top: 0px;
     }
     /* ------works css------ */
     .works_list {
@@ -884,8 +891,4 @@ footer > .sns_contents > ul {
         width: 100%;
         margin: 0 auto 20px;
     }
-
-
-    
-
 }
