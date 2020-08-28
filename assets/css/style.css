@@ -420,7 +420,7 @@ html, body {
 }
 .works_image:hover .works_image_mask {
     opacity: 1;
-    padding-top: 42%;
+    padding-top: 40%;
 }
 .works_caption {
     text-align: center;
