@@ -377,6 +377,7 @@ html, body {
 .works_item {
     width: calc((100% - 60px) / 3);
     overflow: hidden;
+    list-style: none;
     border-radius: 2px;
     box-shadow: 0 0 15px rgba(0,0,0,.2);
     margin-right: 30px;
