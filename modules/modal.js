@@ -1,15 +1,25 @@
-//modalを開く関数："is_open"classをaddする
-//modalが複数ある⇒data属性
 const modalWrapOpen = function(e) {
-  //イベントが付けられたノードに対してdata属性(modal-open)をセット
   const dataModalOpen = e.currentTarget.dataset.modalOpen;
-  Array.from(document.querySelectorAll('.work_modal_wrapper')).forEach((e, i) => {
+  Array.from(document.querySelectorAll('.works_modal_wrapper')).forEach((e) => {
     if(e.getAttribute('data-modal') === dataModalOpen){
       e.classList.toggle('is_open');
     }
+    // if(e.dataset.modal === dataModalOpen){
+    //   e.classList.toggle('is_open');
+    // }
   })
 }
 
-Array.from(document.querySelectorAll('.work_modal_open')).forEach((modalOpenElement) => {
+Array.from(document.querySelectorAll('.works_modal_open')).forEach((modalOpenElement) => {
   modalOpenElement.addEventListener('click', modalWrapOpen);
+})
+
+// modalを消す
+const modalCloseAction = function(e) {
+  const targetModal = e.currentTarget.closest('.works_modal_wrapper');
+  targetModal.classList.toggle('is_open')
+};
+
+Array.from(document.querySelectorAll('.works_modal_close, .works_modal_mask')).forEach((modalCloseElement) => {
+  modalCloseElement.addEventListener('click', modalCloseAction)
 })
