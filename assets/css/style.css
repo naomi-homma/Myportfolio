@@ -481,8 +481,6 @@ html, body {
     margin: auto;
     padding: 15px;
     background: #fff;
-    z-index: 1;
-    overflow-y: hidden;
 }
 .works_modal_content {
     margin: 0 auto;
