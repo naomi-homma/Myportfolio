@@ -1,6 +1,6 @@
 const modalWrapOpen = function(e) {
   const dataModalOpen = e.currentTarget.dataset.modalOpen;
-  Array.from(document.querySelectorAll('.works_modal_wrapper')).forEach((e) => {
+  document.querySelectorAll('.works_modal_wrapper').forEach((e) => {
     if(e.getAttribute('data-modal') === dataModalOpen){
       e.classList.toggle('is_open');
     }
@@ -10,7 +10,7 @@ const modalWrapOpen = function(e) {
   })
 }
 
-Array.from(document.querySelectorAll('.works_modal_open')).forEach((modalOpenElement) => {
+document.querySelectorAll('.works_modal_open').forEach((modalOpenElement) => {
   modalOpenElement.addEventListener('click', modalWrapOpen);
 })
 
@@ -20,6 +20,6 @@ const modalCloseAction = function(e) {
   targetModal.classList.toggle('is_open')
 };
 
-Array.from(document.querySelectorAll('.works_modal_close, .works_modal_mask')).forEach((modalCloseElement) => {
+document.querySelectorAll('.works_modal_close, .works_modal_mask').forEach((modalCloseElement) => {
   modalCloseElement.addEventListener('click', modalCloseAction)
 })
