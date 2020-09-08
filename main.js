@@ -1,29 +1,3 @@
-
-//ロード時ふわっと表示
-$(function(){
-  load_effect();
-});
-
-function load_effect(){
-  var tt = $(window).scrollTop();
-  var hh = $(window).height();
-  $('.load-up').each(function(){
-      var yy = $(this).offset().top;
-      if (tt > yy - hh){
-          $(this).addClass('done');
-      }
-  });
-}
-
-//スクロール時ふわっと表示
-ScrollReveal().reveal('.fadeIn', {
-  delay: 500,
-  duration: 1500, 
-  origin: 'bottom', 
-  distance: '150px',
-  reset: false 
-});
-
 // スムーズスクロール&ハンバーガーメニュー処理
 $(function() {
   //スムーズスクロール

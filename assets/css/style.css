@@ -83,12 +83,12 @@ html, body {
     opacity : 1; 
     transform : translate(0, 0);
 }
-.load-up{
+.load_up{
     opacity: 0; 
     transform: translateY(100px)/*スクロールアップする距離*/; 
     transition: all 1s/*処理にかかる時間*/;
 }
-.load-up.done{
+.load_up.done{
     opacity : 1; 
     transform : translate(0, 0);
 } 
