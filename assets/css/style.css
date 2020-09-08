@@ -74,24 +74,20 @@ html, body {
     margin-bottom: 100px;
 }
 /* ------fadeIn css------ */
-.scroll-up{
-    opacity: 0; 
-    transform: translateY(100px)/*スクロールアップする距離*/; 
-    transition: all 1s/*処理にかかる時間*/;
+.fadeIn {
+    animation-name: fadein;
+    animation-duration: 1.5s;
 }
-.scroll-up.done{
-    opacity : 1; 
-    transform : translate(0, 0);
+@keyframes fadein {
+from {
+    opacity: 0;
+    transform: translateY(50px);
 }
-.load_up{
-    opacity: 0; 
-    transform: translateY(100px)/*スクロールアップする距離*/; 
-    transition: all 1s/*処理にかかる時間*/;
+to {
+    opacity: 1;
+    transform: translateY(0);
 }
-.load_up.done{
-    opacity : 1; 
-    transform : translate(0, 0);
-} 
+}
 /* ------js_fadeIn css------ */
 .js_fadeIn {
     opacity: 0;
